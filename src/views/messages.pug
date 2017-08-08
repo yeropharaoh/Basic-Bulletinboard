@@ -14,13 +14,15 @@ html
 			h1 Here are the messages you posted!
 			br
 			p 
-		
-	each val in posts
-		ul(class='postbox')
-		
-			li Title: #{val.title}
-			li Message: #{val.body}
-			//- li.header.col.s9.light.teal.lighten-1 Message: #{val.body}
+	if posts.length === 0
+		h1 No messages in the sea yet!	
+	
+	else
+		each val in posts
+			ul(class='postbox')
+				li Title: #{val.title}
+				li Message: #{val.body}
+				
 	br
 	br
 
@@ -34,7 +36,3 @@ html
 	a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='/messages') Messages
 	|
 	|
-
-
-		
-

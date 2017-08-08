@@ -1,5 +1,4 @@
 //instantiating neccessaries
-var fs = require('fs');
 const { Client } = require('pg')
 const SQL = require('sql-template-strings')
 
@@ -15,11 +14,11 @@ app.use(express.static(__dirname + '/../public'))
 
 const client = new Client({
 	database: 'bulletinboard',
-  host: 'localhost',
+  	host: 'localhost',
  	user: process.env.POSTGRES_USER,
  	password: process.env.POSTGRES_PASSWORD,
  	port: 5000
-})
+ })
 
 //connects to postgreSQL
 client.connect()

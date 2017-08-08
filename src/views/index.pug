@@ -25,17 +25,17 @@ html
 			a.button-collapse(href='#', data-activates='nav-mobile')
 				i.material-icons menu
 		
-				
+		//- form		
 		.row.center
 			h1.header.center.teal-text.text-lighten-2 Post us a message below!
 		
 			form(method='post' action='/newMessage')
 				h5.header.col.s12.light Title: 
-				input(type='textarea', placeholder='e.g. Seaurchins' name='title')
+				input(type='textarea', minlength='2', placeholder='e.g. Seaurchins' name='title')
 				br
 				br
 				h3.header.col.s12.light Message: 
-				input(type='textarea', name='msgbody')
+				input(type='textarea', minlength='7' name='msgbody')
 				br
 
 				button.btn.btn-primary(type='submit') Submit
@@ -43,28 +43,10 @@ html
 	br
 	.parallax
 		img(src='/images/background1.jpg', alt='image should display')
-		//- //
-		//- .container
-		//- 	.section
-		//- 		.row
-		//- 			.col.s12.m4
-		//- 				.icon-block
-		//- 					h2.center.brown-text
-		//- 						i.material-icons flash_on
-		//- 					h5.center Speeds up development
-		//- 						p.light
-		//- 							| We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
-
+		
 	.parallax
 		img(src='/images/background2.jpg', alt='Unsplashed background img 2')
-		//- .container
-		//- 	.section
-		//- 		.row
-		//- 			.col.s12.center
-		//- 				h3
-		//- 					i.mdi-content-send.brown-text
-		//- 				h4 Contact Us
-	
+			
 	a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='/') Home
 	|
 	|
@@ -75,29 +57,3 @@ html
 	a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='/messages') Messages
 	|
 	|
-
-//- //FOOTER
-//- .row
-//- 	.col.l6.s12
-//- 		h5.white-text Company Bio
-//- 		p.grey-text.text-lighten-4
-//- 			| We are a team of college students working on this project like it&apos;s our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
-//- 	.col.l3.s12
-//- 		h5.white-text Settings
-//- 		ul
-//- 			li
-//- 				a.white-text(href='#!') Link 1
-//- 			li
-//- 				a.white-text(href='#!') Link 2
-//- 			li
-//- 				a.white-text(href='#!') Link 3
-//- 			li
-//- 				a.white-text(href='#!') Link 4
-//- 	.col.l3.s12
-//- 		h5.white-text Connect
-//- 		ul
-//- 			li
-//- 				a.white-text(href='#!') Link 1
-
-		
-

@@ -11,11 +11,9 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "fs": "0.0.1-security",
     "materialize-css": "^0.100.1",
     "nodemon": "^1.11.0",
     "pg": "^7.0.2",
-    "promise": "^8.0.1",
     "pug": "^2.0.0-rc.2",
     "sql-template-strings": "^2.2.2"
   }
